@@ -40,6 +40,62 @@ Proyecto_Voleibol/
 
 ---
 
+## `DIAGRAMA DE CLASES` 🔺
+
+```mermaid
+classDiagram
+    class main {
+        +main()
+    }
+    
+    class conexionBD {
+        +conectar()
+        +crear_tablas()
+        +insertar_equipo(datos)
+        +insertar_jugador(datos)
+        +insertar_partido(datos)
+        +actualizar_equipo(id, datos)
+        +eliminar_jugador(id)
+        +eliminar_partido(id)
+    }
+
+    class VentanaPrincipal {
+        +abrir_equipos()
+        +abrir_jugadores()
+        +abrir_partidos()
+    }
+
+    class VentanaEquipos {
+        +cargar_datos_tabla()
+        +on_guardar_clicked()
+        +on_eliminar_clicked()
+    }
+
+    class VentanaJugadores {
+        +cargar_combobox_equipos()
+        +on_guardar_clicked()
+        +on_eliminar_clicked()
+        +limpiar_formularios()
+    }
+
+    class VentanaPartidos {
+        +cargar_combobox_equipos()
+        +on_guardar_clicked()
+        +on_eliminar_clicked()
+    }
+
+    main --> VentanaPrincipal : Inicia aplicación
+    VentanaPrincipal --> VentanaEquipos : Instancia (Abre)
+    VentanaPrincipal --> VentanaJugadores : Instancia (Abre)
+    VentanaPrincipal --> VentanaPartidos : Instancia (Abre)
+    
+    VentanaEquipos ..> conexionBD : Pide/Envía datos
+    VentanaJugadores ..> conexionBD : Pide/Envía datos
+    VentanaPartidos ..> conexionBD : Pide/Envía datos
+```
+
+---
+
 ## `DESCRIPCIÓN DE ARCHIVOS` 🔻
 
 ### `MAIN.PY` 🔺
@@ -91,6 +147,41 @@ Proyecto_Voleibol/
 - ***Métodos clave: `setUp()` (Prepara una base de datos temporal en memoria), `test_insertar_jugador()`, `tearDown()` (Limpia la base de datos tras la prueba).***
 
 <img width="800" height="100" alt="image" src="https://github.com/user-attachments/assets/3d13762f-c168-457f-9afa-0d8c1ea9c470" />
+
+---
+
+## `DIAGRAMA DE FLUJO` 🔺
+
+```mermaid
+flowchart TD
+    A([Inicio: Ejecutar main]) --> B(conexionBD: crear_tablas)
+    B --> C[Abrir VentanaPrincipal GUI]
+    
+    C --> D{¿Qué desea hacer el usuario?}
+    
+    D -->|Click Botón Equipos| E[Cargar VentanaEquipos]
+    D -->|Click Botón Jugadores| F[Cargar VentanaJugadores]
+    D -->|Click Botón Partidos| G[Cargar VentanaPartidos]
+    
+    E & F & G --> H{Acción en la ventana}
+    
+    H -->|Añadir/Editar| I[Validar inputs del Formulario]
+    H -->|Ver Datos| J[Consultar BD y actualizar TreeView]
+    H -->|Eliminar| K[Obtener ID del registro seleccionado]
+    
+    I --> L{¿Faltan datos?}
+    L -->|Sí| M[Mostrar Aviso de Error al Usuario]
+    L -->|No| N[Ejecutar consulta SQL - try/except]
+    
+    K --> N
+    
+    N -->|Éxito| O[Actualizar BD local]
+    N -->|Error SQL Exception| M
+    
+    O --> P[Limpiar Formulario y recargar tablas]
+    P --> C
+    M --> C
+```
 
 ---
 
