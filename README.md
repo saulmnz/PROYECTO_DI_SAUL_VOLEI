@@ -42,7 +42,7 @@ Proyecto_Voleibol/
 
 ## `DESCRIPCIÓN DE ARCHIVOS` 🔻
 
-### `MAYN.PY` 🔺
+### `MAIN.PY` 🔺
 
 >[!TIP]
 >***Es el motor de arranque del programa. Se encarga de inicializar la aplicación, cargar la interfaz gráfica principal y mantener el bucle de eventos activo.***
