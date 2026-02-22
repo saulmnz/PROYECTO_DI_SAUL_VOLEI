@@ -78,6 +78,9 @@ Proyecto_Voleibol/
     
 - ***`ventana_partidos.py`: Gestiona los encuentros. Utiliza dos ComboBoxes distintos (uno para el Equipo Local y otro para el Equipo Visitante) y campos de entrada numéricos o de texto para el resultado.***
 
+>[!IMPORTANT]
+>***`CONTROL DE ERRORES Y VALIDACIÓN`: Las ventanas incorporan manejo de excepciones. Se validan las entradas del usuario (inputs) para evitar cuelgues si se dejan campos obligatorios vacíos o si se introducen formatos incorrectos, mostrando avisos en lugar de romper la ejecución.***
+
 ---
 
 ### `TESTS/` (`test_bd.py`) 🔺
@@ -205,3 +208,14 @@ Proyecto_Voleibol/
 1. ***Navega hasta la carpeta: `docs/build/html/`.***
 2. ***Abre el archivo principal `index.html` con cualquier navegador web (Chrome, Firefox, Safari).***
 3. ***Navega por el índice lateral (`Módulos`) o utiliza la barra de "Búsqueda Rápida" para encontrar instantáneamente cualquier función o clase del proyecto.***
+
+---
+
+### CAPTURAS DEL FUNCIONAMIENTO ⭕
+
+<img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/09ed5e4a-85e7-491f-afc5-7fbd69ee880b" />
+
+<img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/2920c880-f47b-4a35-8bf1-9f0fd8a17156" />
+
+<img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/4fb19fcc-25b9-48d6-8d87-e7379ec2bd43" />
+
