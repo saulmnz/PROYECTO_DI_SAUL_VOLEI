@@ -1,0 +1,3 @@
+[console_scripts]
+iniciar-volei = main:main
+

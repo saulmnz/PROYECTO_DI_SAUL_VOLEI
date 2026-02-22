@@ -1,0 +1,13 @@
+conexionBD.py
+main.py
+setup.py
+GESTOR_VOLEIBOL.egg-info/PKG-INFO
+GESTOR_VOLEIBOL.egg-info/SOURCES.txt
+GESTOR_VOLEIBOL.egg-info/dependency_links.txt
+GESTOR_VOLEIBOL.egg-info/entry_points.txt
+GESTOR_VOLEIBOL.egg-info/requires.txt
+GESTOR_VOLEIBOL.egg-info/top_level.txt
+ventanas/ventana_equipos.py
+ventanas/ventana_jugadores.py
+ventanas/ventana_partidos.py
+ventanas/ventana_principal.py

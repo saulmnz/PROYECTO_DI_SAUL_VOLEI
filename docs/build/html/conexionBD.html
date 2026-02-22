@@ -1,0 +1,164 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>conexionBD module &#8212; documentación de GESTOR_VOLEIBOL - 1.0</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-conexionBD">
+<span id="conexionbd-module"></span><h1>conexionBD module<a class="headerlink" href="#module-conexionBD" title="Enlazar permanentemente con este título">¶</a></h1>
+<dl class="class">
+<dt id="conexionBD.ConexionBD">
+<em class="property">class </em><code class="descclassname">conexionBD.</code><code class="descname">ConexionBD</code><a class="reference internal" href="_modules/conexionBD.html#ConexionBD"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(en Python versión 3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>CLASE PARA GESTIONAR LA CONEXIÓN A SQLITE.
+SE ENCARGA DE CREAR LAS TABLAS SOBRE LAS QUE VAMOS A OPERAR.</p>
+<dl class="method">
+<dt id="conexionBD.ConexionBD.actualizar_equipo">
+<code class="descname">actualizar_equipo</code><span class="sig-paren">(</span><em>id_equipo</em>, <em>nombre</em>, <em>categoria</em>, <em>federado</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/conexionBD.html#ConexionBD.actualizar_equipo"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD.actualizar_equipo" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="conexionBD.ConexionBD.conectar">
+<code class="descname">conectar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/conexionBD.html#ConexionBD.conectar"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD.conectar" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>CONEXIÓN CON LA BASE DE DATOS.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="conexionBD.ConexionBD.crear_tablas">
+<code class="descname">crear_tablas</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/conexionBD.html#ConexionBD.crear_tablas"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD.crear_tablas" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>CREA LAS TABLAS EN LA BASE DE DATOS</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="conexionBD.ConexionBD.eliminar_equipo">
+<code class="descname">eliminar_equipo</code><span class="sig-paren">(</span><em>id_equipo</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/conexionBD.html#ConexionBD.eliminar_equipo"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD.eliminar_equipo" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="conexionBD.ConexionBD.eliminar_jugador">
+<code class="descname">eliminar_jugador</code><span class="sig-paren">(</span><em>id_jugador</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/conexionBD.html#ConexionBD.eliminar_jugador"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD.eliminar_jugador" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="conexionBD.ConexionBD.eliminar_partido">
+<code class="descname">eliminar_partido</code><span class="sig-paren">(</span><em>id_partido</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/conexionBD.html#ConexionBD.eliminar_partido"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD.eliminar_partido" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="conexionBD.ConexionBD.insertar_equipo">
+<code class="descname">insertar_equipo</code><span class="sig-paren">(</span><em>nombre</em>, <em>categoria</em>, <em>federado</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/conexionBD.html#ConexionBD.insertar_equipo"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD.insertar_equipo" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="conexionBD.ConexionBD.insertar_jugador">
+<code class="descname">insertar_jugador</code><span class="sig-paren">(</span><em>nombre</em>, <em>dorsal</em>, <em>posicion</em>, <em>id_equipo</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/conexionBD.html#ConexionBD.insertar_jugador"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD.insertar_jugador" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="conexionBD.ConexionBD.insertar_partido">
+<code class="descname">insertar_partido</code><span class="sig-paren">(</span><em>id_local</em>, <em>id_visitante</em>, <em>resultado</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/conexionBD.html#ConexionBD.insertar_partido"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD.insertar_partido" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="conexionBD.ConexionBD.obtener_equipos">
+<code class="descname">obtener_equipos</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/conexionBD.html#ConexionBD.obtener_equipos"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD.obtener_equipos" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="conexionBD.ConexionBD.obtener_jugadores">
+<code class="descname">obtener_jugadores</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/conexionBD.html#ConexionBD.obtener_jugadores"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD.obtener_jugadores" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>RECUPERA LOS JUGADORES HACIENDO UN JOIN PARA OBTENER EL NOMBRE DEL EQUIPO.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="conexionBD.ConexionBD.obtener_partidos">
+<code class="descname">obtener_partidos</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/conexionBD.html#ConexionBD.obtener_partidos"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#conexionBD.ConexionBD.obtener_partidos" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>RECUPERA LOS PARTIDOS CRUZANDO CON LA TABLA EQUIPOS DOS VECES (LOCAL Y VISITANTE).</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">GESTOR_VOLEIBOL</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2026, SAUL.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/conexionBD.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
