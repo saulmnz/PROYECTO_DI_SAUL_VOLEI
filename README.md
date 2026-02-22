@@ -211,7 +211,7 @@ Proyecto_Voleibol/
 
 ---
 
-### CAPTURAS DEL FUNCIONAMIENTO ⭕
+### `CAPTURAS DEL FUNCIONAMIENTO` ⭕
 
 <img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/09ed5e4a-85e7-491f-afc5-7fbd69ee880b" />
 
