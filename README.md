@@ -266,7 +266,7 @@ flowchart TD
 > python -m sphinx -b html docs/source docs/build/html
 ```
 
-<img width="900" height="400" alt="image" src="https://github.com/user-attachments/assets/0e86f020-85b8-47ef-b2c5-37e55a0856b3" />
+<img width="900" height="500" alt="image" src="https://github.com/user-attachments/assets/545c6fef-8c14-4a7e-82da-87e644df4059" />
 
 
 ---
