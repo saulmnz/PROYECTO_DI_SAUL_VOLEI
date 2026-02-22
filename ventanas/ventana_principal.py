@@ -14,7 +14,7 @@ class VentanaPrincipal(Gtk.Window):
         """
         CONFIGURAMOS TAMAÑO, TÍTULO Y LOS CONTENEDORES INICIALES.
         """
-        super().__init__(title="GESTOR CLUB DE VOLEIBOL GALICIIA")
+        super().__init__(title="GESTOR CLUB DE VOLEIBOL GALICIA")
 
         # CONFIGURAMOS EL TAMAÑO DE LA VENTANA
         self.set_default_size(600, 400)
