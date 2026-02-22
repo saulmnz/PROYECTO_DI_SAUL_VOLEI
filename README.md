@@ -54,7 +54,7 @@ Proyecto_Voleibol/
 >[!TIP]
 >***Gestiona toda la comunicación entre aplicación y base de datos `voleibol.db`. Maneja las operaciones CRUD ⚠️⚠️***
 
-**MÉTODOS CLAVE:**
+**`MÉTODOS CLAVE`:**
 - ***`conectar()`: Establece y devuelve la conexión con SQLite.***
 - ***`crear_tablas()`: Genera la estructura inicial si la BD está vacía***
 - ***`insertar_equipo`, `insertar_jugador()`,`insertar_partido()`: Añaden nuevos registros a la base de datos en cada una de las tablas especificadas***
