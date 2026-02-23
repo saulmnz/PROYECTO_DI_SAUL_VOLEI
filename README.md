@@ -276,11 +276,12 @@ flowchart TD
 ### `¿CÓMO EJECUTAR EL PROGRAMA?` 🔺
 
 >[!CAUTION]
->***No necesitas instalar Python, ni IDEs, ni configurar variables de entorno para usar el programa.***
+>***No necesitas instalar Python, ni IDEs, ni configurar variables de entorno para usar el programa. Pedes optar como se comenté en el empaquetado por usar el comando `pip install .` y el comando `iniciar-volei` en la terminal, o...***
 
 - ***Navega hasta la carpeta empaquetada: `dist/main/`.***
 - ***Haz doble clic en el archivo ejecutable llamado `main`.***
 - ***Nota sobre la Base de Datos: Si es la primera vez que lo abres o si borras el archivo `voleibol.db`, el programa detectará su ausencia y, gracias al método `crear_tablas()`, generará una base de datos nueva y limpia automáticamente de forma transparente.***
+
 
 ### `FLUJO DE TRABAJO RECOMENDADO EN LA APLICACIÓN` 🔺
 
@@ -299,6 +300,22 @@ flowchart TD
 1. ***Navega hasta la carpeta: `docs/build/html/`.***
 2. ***Abre el archivo principal `index.html` con cualquier navegador web (Chrome, Firefox, Safari).***
 3. ***Navega por el índice lateral (`Módulos`) o utiliza la barra de "Búsqueda Rápida" para encontrar instantáneamente cualquier función o clase del proyecto.***
+
+---
+
+### `PROYECTO EN PYPI` 🔺
+
+```bash
+> export TWINE_USERNAME=__token__
+
+> export TWINE_PASSWORD=pypi AgEIcHlwaS5vcmcCJDIwMjcyZmQ0LTEyNjYtNGY0Ny1iYzdjLTJmZTY4OWYwMDhkYgACKlszLCJlNzlmYjhiYy00MGU4LTQxZDEtYjAzMS01NzNmODQ4NGFmNzEiXQAABiCr62T5Axy-2BEHW9UBVeOxzBhG_e2dfT9caGoinJdR5Q
+
+> twine upload dist/*.whl dist/*.tar.gz
+```
+
+<img width="900" height="400" alt="image" src="https://github.com/user-attachments/assets/6092cdfc-d125-4bcc-8b4f-127ea0e2322b" />
+
+
 
 ---
 
